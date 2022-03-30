@@ -30960,6 +30960,31 @@
       .rcs__title {
         text-align: center !important;
       }
+      .swiper-container {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+      }
+      .swiper-slide {
+        flex-shrink: 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition-property: transform;
+      }
+      .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
       @media (min-width: 768px) {
         .rcs__title {
           text-align: left !important;
@@ -31034,16 +31059,22 @@
       }
     </style>
   </head>
-  <body class="" data-n-head="%7B%22class%22:%7B%22ssr%22:%22%22%7D%7D">
-    <div data-server-rendered="true" id="__nuxt">
+  <body
+    class=""
+    data-n-head="%7B%22class%22:%7B%22ssr%22:%22%22%7D%7D"
+    data-aos-easing="ease"
+    data-aos-duration="400"
+    data-aos-delay="0"
+  >
+    <div id="__nuxt">
       <!---->
       <div id="__layout">
         <div>
           <div id="navbar" class="navbar mb-3">
             <div class="row no-gutters w-100 desktop-navbar">
-              <a href="index.html" class="col-2 text-left nuxt-link-active"
+              <a href="/" class="col-2 text-left nuxt-link-active"
                 ><img
-                  src="_nuxt/img/logo.0c08f6c.svg"
+                  src="/_nuxt/img/logo.0c08f6c.svg"
                   alt=""
                   class="mt-05 desktop-nav__logo"
               /></a>
@@ -31052,16 +31083,16 @@
               >
                 <ul class="mb-1">
                   <li class="mx-4">
-                    <a href="index.html" class="relative"> Inicio </a>
+                    <a href="/" class="relative"> Inicio </a>
                   </li>
                   <li class="mx-4">
-                    <a href="quienes-somos/index.html" class="relative">
+                    <a href="/quienes-somos/" class="relative">
                       La otra mirada
                     </a>
                   </li>
                   <li class="mx-4">
                     <a
-                      href="conferencias/index.html"
+                      href="/conferencias/"
                       aria-current="page"
                       class="relative nuxt-link-exact-active nuxt-link-active"
                     >
@@ -31069,7 +31100,7 @@
                     </a>
                   </li>
                   <li class="mx-4">
-                    <a href="vitrina/index.html" class="relative"> Vitrina </a>
+                    <a href="/vitrina/" class="relative"> Vitrina </a>
                   </li>
                 </ul>
               </div>
@@ -31087,9 +31118,9 @@
             <div class="mobile-navbar mobile-navbar">
               <div class="row mobile-nav no-gutters pl-1 pr-1 w-100">
                 <div class="col logo">
-                  <a href="index.html" class="unstyled-link nuxt-link-active"
+                  <a href="/" class="unstyled-link nuxt-link-active"
                     ><img
-                      src="_nuxt/img/logo.0c08f6c.svg"
+                      src="/_nuxt/img/logo.0c08f6c.svg"
                       alt=""
                       class="mobile-navbar__logo"
                   /></a>
@@ -31120,7 +31151,7 @@
                     <div class="sidenav-container">
                       <div class="login-button">
                         <a
-                          href="login.html"
+                          href="/login"
                           class="button-link button-link--secondary w-100 relative d-block"
                           ><span
                             class="mdi mdi-account ifs-20 absolute icon-in-button"
@@ -31129,29 +31160,25 @@
                         >
                       </div>
                       <div class="links">
-                        <a href="index.html" class="text--plain unstyled-link"
-                          >Inicio</a
-                        >
+                        <a href="/" class="text--plain unstyled-link">Inicio</a>
                       </div>
                       <div class="links">
                         <a
-                          href="quienes-somos/index.html"
+                          href="/quienes-somos/"
                           class="text--plain unstyled-link"
                           >La otra mirada</a
                         >
                       </div>
                       <div class="links">
                         <a
-                          href="conferencias/index.html"
+                          href="/conferencias/"
                           aria-current="page"
                           class="text--plain unstyled-link nuxt-link-exact-active nuxt-link-active"
                           >Conferencias</a
                         >
                       </div>
                       <div class="links">
-                        <a
-                          href="vitrina/index.html"
-                          class="text--plain unstyled-link"
+                        <a href="/vitrina/" class="text--plain unstyled-link"
                           >Vitrina</a
                         >
                       </div>
@@ -31166,7 +31193,11 @@
                 </div>
                 <!----><!---->
               </div>
-              <button class="mobile-menu">
+              <button
+                class="mobile-menu collapsed"
+                aria-expanded="false"
+                aria-controls="mobileSidebar"
+              >
                 <span class="mdi mdi-menu ifs-24 black-text"></span>
               </button>
             </div>
@@ -31189,8 +31220,8 @@
             <div class="header header--conferences">
               <div class="header__background">
                 <img
-                  src="../api.laotramirada.com/content/uploads/2020/11/Ayaan-3bn-scaled-e1604505260262.jpg"
-                  alt
+                  src="https://api.laotramirada.com/content/uploads/2020/11/Ayaan-3bn-scaled-e1604505260262.jpg"
+                  alt=""
                   class="header__image"
                 />
                 <div class="dark-gradient-layer"></div>
@@ -31220,16 +31251,16 @@
                 <div
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  class="container p-xs-0"
+                  class="container p-xs-0 aos-init aos-animate"
                 >
                   <!---->
                 </div>
                 <div
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  class="container-fluid p-md-0"
+                  class="container-fluid p-md-0 aos-init aos-animate"
                 >
-                  <div textAlign="text-left" class="rcs section">
+                  <div textalign="text-left" class="rcs section">
                     <h2 class="container rcs__title title--l mb-2 text-left">
                       Conferencias
                     </h2>
@@ -31237,16 +31268,24 @@
                     <div class="rcs__carousel">
                       <div class="conferences-carousel">
                         <div class="conferences-carousel__wide-container">
-                          <div>
-                            <div class="swiper-wrapper">
-                              <div class="swiper-slide">
+                          <div
+                            class="swiper-container swiper-container-initialized swiper-container-horizontal"
+                          >
+                            <div
+                              class="swiper-wrapper"
+                              style="transform: translate3d(0px, 0px, 0px)"
+                            >
+                              <div
+                                class="swiper-slide swiper-slide-active"
+                                style="width: 351.75px"
+                              >
                                 <div class="conference-card-container">
                                   <a
-                                    href="conferencias/ivan-duque/index.html"
+                                    href="/conferencias/ivan-duque/"
                                     class="conference-card card cleared"
                                     ><div class="relative">
                                       <img
-                                        src="../api.laotramirada.com/content/uploads/2020/10/Duque-Marquez-1-e1606403786380.png"
+                                        src="https://api.laotramirada.com/content/uploads/2020/10/Duque-Marquez-1-e1606403786380.png"
                                         alt=""
                                         class="cc-image card__image--no-filter"
                                       />
@@ -31273,14 +31312,17 @@
                                   ></a>
                                 </div>
                               </div>
-                              <div class="swiper-slide">
+                              <div
+                                class="swiper-slide swiper-slide-next"
+                                style="width: 351.75px"
+                              >
                                 <div class="conference-card-container">
                                   <a
-                                    href="conferencias/moises-naim/index.html"
+                                    href="/conferencias/moises-naim/"
                                     class="conference-card card cleared"
                                     ><div class="relative">
                                       <img
-                                        src="../api.laotramirada.com/content/uploads/2020/11/Moises-Nai%cc%81m-1.png"
+                                        src="https://api.laotramirada.com/content/uploads/2020/11/Moises-Naím-1.png"
                                         alt=""
                                         class="cc-image card__image--no-filter"
                                       />
@@ -31309,14 +31351,14 @@
                                   ></a>
                                 </div>
                               </div>
-                              <div class="swiper-slide">
+                              <div class="swiper-slide" style="width: 351.75px">
                                 <div class="conference-card-container">
                                   <a
-                                    href="conferencias/sergio-moro/index.html"
+                                    href="/conferencias/sergio-moro/"
                                     class="conference-card card cleared"
                                     ><div class="relative">
                                       <img
-                                        src="../api.laotramirada.com/content/uploads/2020/11/Moro-1-e1606403731134.png"
+                                        src="https://api.laotramirada.com/content/uploads/2020/11/Moro-1-e1606403731134.png"
                                         alt=""
                                         class="cc-image card__image--no-filter"
                                       />
@@ -31343,14 +31385,14 @@
                                   ></a>
                                 </div>
                               </div>
-                              <div class="swiper-slide">
+                              <div class="swiper-slide" style="width: 351.75px">
                                 <div class="conference-card-container">
                                   <a
-                                    href="conferencias/mauricio-macri/index.html"
+                                    href="/conferencias/mauricio-macri/"
                                     class="conference-card card cleared"
                                     ><div class="relative">
                                       <img
-                                        src="../api.laotramirada.com/content/uploads/2020/11/Macri-2-1-e1606403690932.png"
+                                        src="https://api.laotramirada.com/content/uploads/2020/11/Macri-2-1-e1606403690932.png"
                                         alt=""
                                         class="cc-image card__image--no-filter"
                                       />
@@ -31377,14 +31419,14 @@
                                   ></a>
                                 </div>
                               </div>
-                              <div class="swiper-slide">
+                              <div class="swiper-slide" style="width: 351.75px">
                                 <div class="conference-card-container">
                                   <a
-                                    href="conferencias/oscar-naranjo/index.html"
+                                    href="/conferencias/oscar-naranjo/"
                                     class="conference-card card cleared"
                                     ><div class="relative">
                                       <img
-                                        src="../api.laotramirada.com/content/uploads/2020/11/Naranjo-2-2-e1606402956161.png"
+                                        src="https://api.laotramirada.com/content/uploads/2020/11/Naranjo-2-2-e1606402956161.png"
                                         alt=""
                                         class="cc-image card__image--no-filter"
                                       />
@@ -31411,14 +31453,14 @@
                                   ></a>
                                 </div>
                               </div>
-                              <div class="swiper-slide">
+                              <div class="swiper-slide" style="width: 351.75px">
                                 <div class="conference-card-container">
                                   <a
-                                    href="conferencias/mario-vargas-llosa-2-2/index.html"
+                                    href="/conferencias/mario-vargas-llosa-2-2/"
                                     class="conference-card card cleared"
                                     ><div class="relative">
                                       <img
-                                        src="../api.laotramirada.com/content/uploads/2020/11/MVLL_A2-1-e1606402876713.png"
+                                        src="https://api.laotramirada.com/content/uploads/2020/11/MVLL_A2-1-e1606402876713.png"
                                         alt=""
                                         class="cc-image card__image--no-filter"
                                       />
@@ -31445,14 +31487,14 @@
                                   ></a>
                                 </div>
                               </div>
-                              <div class="swiper-slide">
+                              <div class="swiper-slide" style="width: 351.75px">
                                 <div class="conference-card-container">
                                   <a
-                                    href="conferencias/paul-polman/index.html"
+                                    href="/conferencias/paul-polman/"
                                     class="conference-card card cleared"
                                     ><div class="relative">
                                       <img
-                                        src="../api.laotramirada.com/content/uploads/2020/11/Polman-3-e1606403027455.png"
+                                        src="https://api.laotramirada.com/content/uploads/2020/11/Polman-3-e1606403027455.png"
                                         alt=""
                                         class="cc-image card__image--no-filter"
                                       />
@@ -31481,14 +31523,14 @@
                                   ></a>
                                 </div>
                               </div>
-                              <div class="swiper-slide">
+                              <div class="swiper-slide" style="width: 351.75px">
                                 <div class="conference-card-container">
                                   <a
-                                    href="conferencias/guy-sorman/index.html"
+                                    href="/conferencias/guy-sorman/"
                                     class="conference-card card cleared"
                                     ><div class="relative">
                                       <img
-                                        src="../api.laotramirada.com/content/uploads/2020/11/Sorman-2-2-e1606403098549.png"
+                                        src="https://api.laotramirada.com/content/uploads/2020/11/Sorman-2-2-e1606403098549.png"
                                         alt=""
                                         class="cc-image card__image--no-filter"
                                       />
@@ -31515,14 +31557,14 @@
                                   ></a>
                                 </div>
                               </div>
-                              <div class="swiper-slide">
+                              <div class="swiper-slide" style="width: 351.75px">
                                 <div class="conference-card-container">
                                   <a
-                                    href="conferencias/ayaan-hirsi-ali/index.html"
+                                    href="/conferencias/ayaan-hirsi-ali/"
                                     class="conference-card card cleared"
                                     ><div class="relative">
                                       <img
-                                        src="../api.laotramirada.com/content/uploads/2020/11/hirsi-3-e1606403151788.png"
+                                        src="https://api.laotramirada.com/content/uploads/2020/11/hirsi-3-e1606403151788.png"
                                         alt=""
                                         class="cc-image card__image--no-filter"
                                       />
@@ -31549,14 +31591,14 @@
                                   ></a>
                                 </div>
                               </div>
-                              <div class="swiper-slide">
+                              <div class="swiper-slide" style="width: 351.75px">
                                 <div class="conference-card-container">
                                   <a
-                                    href="conferencias/john-tomasi/index.html"
+                                    href="/conferencias/john-tomasi/"
                                     class="conference-card card cleared"
                                     ><div class="relative">
                                       <img
-                                        src="../api.laotramirada.com/content/uploads/2020/11/Tomasi-3-e1606403245905.png"
+                                        src="https://api.laotramirada.com/content/uploads/2020/11/Tomasi-3-e1606403245905.png"
                                         alt=""
                                         class="cc-image card__image--no-filter"
                                       />
@@ -31585,14 +31627,14 @@
                                   ></a>
                                 </div>
                               </div>
-                              <div class="swiper-slide">
+                              <div class="swiper-slide" style="width: 351.75px">
                                 <div class="conference-card-container">
                                   <a
-                                    href="conferencias/mario-vargas-llosa/index.html"
+                                    href="/conferencias/mario-vargas-llosa/"
                                     class="conference-card card cleared"
                                     ><div class="relative">
                                       <img
-                                        src="../api.laotramirada.com/content/uploads/2020/11/MVLL-3-e1606402898451.png"
+                                        src="https://api.laotramirada.com/content/uploads/2020/11/MVLL-3-e1606402898451.png"
                                         alt=""
                                         class="cc-image card__image--no-filter"
                                       />
@@ -31619,14 +31661,14 @@
                                   ></a>
                                 </div>
                               </div>
-                              <div class="swiper-slide">
+                              <div class="swiper-slide" style="width: 351.75px">
                                 <div class="conference-card-container">
                                   <a
-                                    href="conferencias/guillermo-lasso/index.html"
+                                    href="/conferencias/guillermo-lasso/"
                                     class="conference-card card cleared"
                                     ><div class="relative">
                                       <img
-                                        src="../api.laotramirada.com/content/uploads/2020/11/1-1.png"
+                                        src="https://api.laotramirada.com/content/uploads/2020/11/1-1.png"
                                         alt=""
                                         class="cc-image card__image--no-filter"
                                       />
@@ -31653,14 +31695,14 @@
                                   ></a>
                                 </div>
                               </div>
-                              <div class="swiper-slide">
+                              <div class="swiper-slide" style="width: 351.75px">
                                 <div class="conference-card-container">
                                   <a
-                                    href="conferencias/jonathan-haidt/index.html"
+                                    href="/conferencias/jonathan-haidt/"
                                     class="conference-card card cleared"
                                     ><div class="relative">
                                       <img
-                                        src="../api.laotramirada.com/content/uploads/2020/11/3.2-1.png"
+                                        src="https://api.laotramirada.com/content/uploads/2020/11/3.2-1.png"
                                         alt=""
                                         class="cc-image card__image--no-filter"
                                       />
@@ -31689,14 +31731,14 @@
                                   ></a>
                                 </div>
                               </div>
-                              <div class="swiper-slide">
+                              <div class="swiper-slide" style="width: 351.75px">
                                 <div class="conference-card-container">
                                   <a
-                                    href="conferencias/deirdre-mccloskey/index.html"
+                                    href="/conferencias/deirdre-mccloskey/"
                                     class="conference-card card cleared"
                                     ><div class="relative">
                                       <img
-                                        src="../api.laotramirada.com/content/uploads/2020/11/McCloskey-3-e1606403558220.png"
+                                        src="https://api.laotramirada.com/content/uploads/2020/11/McCloskey-3-e1606403558220.png"
                                         alt=""
                                         class="cc-image card__image--no-filter"
                                       />
@@ -31723,14 +31765,14 @@
                                   ></a>
                                 </div>
                               </div>
-                              <div class="swiper-slide">
+                              <div class="swiper-slide" style="width: 351.75px">
                                 <div class="conference-card-container">
                                   <a
-                                    href="conferencias/luigi-zingales/index.html"
+                                    href="/conferencias/luigi-zingales/"
                                     class="conference-card card cleared"
                                     ><div class="relative">
                                       <img
-                                        src="../api.laotramirada.com/content/uploads/2020/11/4-1.png"
+                                        src="https://api.laotramirada.com/content/uploads/2020/11/4-1.png"
                                         alt=""
                                         class="cc-image card__image--no-filter"
                                       />
@@ -31759,14 +31801,14 @@
                                   ></a>
                                 </div>
                               </div>
-                              <div class="swiper-slide">
+                              <div class="swiper-slide" style="width: 351.75px">
                                 <div class="conference-card-container">
                                   <a
-                                    href="conferencias/rudy-giuliani/index.html"
+                                    href="/conferencias/rudy-giuliani/"
                                     class="conference-card card cleared"
                                     ><div class="relative">
                                       <img
-                                        src="../api.laotramirada.com/content/uploads/2020/11/5.2-1.png"
+                                        src="https://api.laotramirada.com/content/uploads/2020/11/5.2-1.png"
                                         alt=""
                                         class="cc-image card__image--no-filter"
                                       />
@@ -31793,14 +31835,14 @@
                                   ></a>
                                 </div>
                               </div>
-                              <div class="swiper-slide">
+                              <div class="swiper-slide" style="width: 351.75px">
                                 <div class="conference-card-container">
                                   <a
-                                    href="conferencias/yoani-sanchez/index.html"
+                                    href="/conferencias/yoani-sanchez/"
                                     class="conference-card card cleared"
                                     ><div class="relative">
                                       <img
-                                        src="../api.laotramirada.com/content/uploads/2020/11/Sanche%cc%81z-2-2-e1606403614788.png"
+                                        src="https://api.laotramirada.com/content/uploads/2020/11/Sanchéz-2-2-e1606403614788.png"
                                         alt=""
                                         class="cc-image card__image--no-filter"
                                       />
@@ -31827,14 +31869,14 @@
                                   ></a>
                                 </div>
                               </div>
-                              <div class="swiper-slide">
+                              <div class="swiper-slide" style="width: 351.75px">
                                 <div class="conference-card-container">
                                   <a
-                                    href="conferencias/jesse-norman/index.html"
+                                    href="/conferencias/jesse-norman/"
                                     class="conference-card card cleared"
                                     ><div class="relative">
                                       <img
-                                        src="../api.laotramirada.com/content/uploads/2020/11/2.2-1.png"
+                                        src="https://api.laotramirada.com/content/uploads/2020/11/2.2-1.png"
                                         alt=""
                                         class="cc-image card__image--no-filter"
                                       />
@@ -31861,14 +31903,14 @@
                                   ></a>
                                 </div>
                               </div>
-                              <div class="swiper-slide">
+                              <div class="swiper-slide" style="width: 351.75px">
                                 <div class="conference-card-container">
                                   <a
-                                    href="conferencias/niall-ferguson/index.html"
+                                    href="/conferencias/niall-ferguson/"
                                     class="conference-card card cleared"
                                     ><div class="relative">
                                       <img
-                                        src="../api.laotramirada.com/content/uploads/2020/11/Ferguson-2-e1606403654962.png"
+                                        src="https://api.laotramirada.com/content/uploads/2020/11/Ferguson-2-e1606403654962.png"
                                         alt=""
                                         class="cc-image card__image--no-filter"
                                       />
@@ -31903,8 +31945,37 @@
                         <div
                           class="row no-gutters conferences-carousel__paginator container p-xs-0"
                         >
-                          <!---->
-                          <!---->
+                          <div class="custom-progress">
+                            <div class="progress">
+                              <div
+                                role="progressbar"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                                aria-valuenow="20"
+                                class="progress-bar"
+                                style="width: 20%"
+                              >
+                                <!---->
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="justify-content-end conferences-carousel__arrows"
+                          >
+                            <div
+                              class="text--label d-flex align-items-center mr-1"
+                            >
+                              1/5
+                            </div>
+                            <button
+                              class="round-icon round-icon--outlined mr-1"
+                            >
+                              <span class="mdi mdi-arrow-left ifs-24"></span>
+                            </button>
+                            <button class="round-icon round-icon--outlined">
+                              <span class="mdi mdi-arrow-right ifs-24"></span>
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -31913,7 +31984,7 @@
                 <div
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  class="container p-xs-0"
+                  class="container p-xs-0 aos-init"
                 >
                   <!---->
                 </div>
@@ -31921,7 +31992,198 @@
             </div>
           </div>
           <div class="container">
-            <div class="footer"><!----></div>
+            <div class="footer">
+              <div>
+                <div class="newsletter-container mb-3">
+                  <div class="newsletter row no-gutters">
+                    <div class="col-md-7">
+                      <h2 class="newsletter__title title--footer">
+                        Suscríbete a nuestro newsletter
+                      </h2>
+                      <p class="newsletter__info text--list-item">
+                        Recibe las últimas novedades en tu correo
+                      </p>
+                      <span
+                        ><form>
+                          <span
+                            ><div class="full-form-control mb-2">
+                              <div class="full-form-control__icon">
+                                <span
+                                  class="mdi mdi-email-outline ifs-24"
+                                ></span>
+                              </div>
+                              <div class="full-form-control__input">
+                                <input
+                                  type="email"
+                                  placeholder="Correo (ej: tucorreo@gmail.com)"
+                                />
+                              </div>
+                              <div class="full-form-control__button">
+                                <button type="submit" disabled="disabled">
+                                  <span class="mdi mdi-send ifs-24"></span>
+                                </button>
+                              </div>
+                            </div>
+                            <!----></span
+                          >
+                        </form>
+                        <div
+                          data-sitekey="6LcPzu8ZAAAAACb1ZDwXgwCZJo1cHQufTlDLLxBI"
+                          data-size="invisible"
+                          data-theme="light"
+                          data-badge="bottomright"
+                          data-tabindex="0"
+                          data-callback="recaptchaSuccessCallback"
+                          data-expired-callback="recaptchaExpiredCallback"
+                          data-error-callback="recaptchaErrorCallback"
+                          class="g-recaptcha"
+                        >
+                          <div
+                            class="grecaptcha-badge"
+                            data-style="bottomright"
+                            style="
+                              width: 256px;
+                              height: 60px;
+                              display: block;
+                              transition: right 0.3s ease 0s;
+                              position: fixed;
+                              bottom: 14px;
+                              right: -186px;
+                              box-shadow: gray 0px 0px 5px;
+                              border-radius: 2px;
+                              overflow: hidden;
+                            "
+                          >
+                            <div class="grecaptcha-logo">
+                              <iframe
+                                title="reCAPTCHA"
+                                src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcPzu8ZAAAAACb1ZDwXgwCZJo1cHQufTlDLLxBI&amp;co=aHR0cHM6Ly9sYW90cmFtaXJhZGEuY29tOjQ0Mw..&amp;hl=es&amp;v=2uoiJ4hP3NUoP9v_eBNfU6CR&amp;theme=light&amp;size=invisible&amp;badge=bottomright&amp;cb=dni5danjlejd"
+                                width="256"
+                                height="60"
+                                role="presentation"
+                                name="a-olbbpi6ck8wv"
+                                frameborder="0"
+                                scrolling="no"
+                                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+                              ></iframe>
+                            </div>
+                            <div class="grecaptcha-error"></div>
+                            <textarea
+                              id="g-recaptcha-response"
+                              name="g-recaptcha-response"
+                              class="g-recaptcha-response"
+                              style="
+                                width: 250px;
+                                height: 40px;
+                                border: 1px solid rgb(193, 193, 193);
+                                margin: 10px 25px;
+                                padding: 0px;
+                                resize: none;
+                                display: none;
+                              "
+                            ></textarea>
+                          </div>
+                          <iframe style="display: none"></iframe></div
+                      ></span>
+                    </div>
+                    <div class="col-md-5 mt-4 mt-md-0">
+                      <div class="newsletter__latest">
+                        <h2 class="title--footer uppercase mb-1">
+                          Últimos expositores
+                        </h2>
+                        <div class="row no-gutters">
+                          <div class="col-6 text--list-item op-7">
+                            <span class="mdi mdi-chevron-right ifs-16"></span>
+                            <a
+                              href="/conferencias/moises-naim"
+                              class="newsletter__link unstyled-link"
+                              >Moises Naim</a
+                            >
+                          </div>
+                          <div class="col-6 text--list-item op-7">
+                            <span class="mdi mdi-chevron-right ifs-16"></span>
+                            <a
+                              href="/conferencias/ivan-duque"
+                              class="newsletter__link unstyled-link"
+                              >Ivan Duque</a
+                            >
+                          </div>
+                          <div class="col-6 text--list-item op-7">
+                            <span class="mdi mdi-chevron-right ifs-16"></span>
+                            <a
+                              href="/conferencias/sergio-moro"
+                              class="newsletter__link unstyled-link"
+                              >Sergio Moro</a
+                            >
+                          </div>
+                          <div class="col-6 text--list-item op-7">
+                            <span class="mdi mdi-chevron-right ifs-16"></span>
+                            <a
+                              href="/vitrina/lideres/mauricio-macri"
+                              class="newsletter__link unstyled-link"
+                              >Mauricio Macri</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="socials-container mb-3">
+                  <div class="socials row no-gutters">
+                    <div class="col-12 col-md-auto d-flex align-items-center">
+                      <div class="row no-gutters">
+                        <div class="col-12 col-md-auto">
+                          <label class="socials__message text--plain mb-0 mr-3"
+                            >Síguenos en RRSS</label
+                          >
+                        </div>
+                        <div class="col-12 col-md-auto">
+                          <ul class="socials__links">
+                            <li class="socials__link">
+                              <a
+                                href="https://www.facebook.com/laotramirada.cl/"
+                                target="_blank"
+                                class="unstyled-link"
+                                ><span
+                                  class="mdi mdi-facebook ifs-24 socials__icon"
+                                ></span
+                              ></a>
+                            </li>
+                            <li class="socials__link">
+                              <a
+                                href="https://twitter.com/laotramirada_cl"
+                                target="_blank"
+                                class="unstyled-link"
+                                ><span
+                                  class="mdi mdi-twitter ifs-24 socials__icon"
+                                ></span
+                              ></a>
+                            </li>
+                            <li class="socials__link">
+                              <a
+                                href="https://www.instagram.com/laotramirada_cl"
+                                target="_blank"
+                                class="unstyled-link"
+                                ><span
+                                  class="mdi mdi-instagram ifs-24 socials__icon"
+                                ></span
+                              ></a>
+                            </li>
+                            <!---->
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex align-items-center">
+                      <a href="/contacto" class="text--link unstyled-link"
+                        >Contáctanos</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -32164,7 +32426,7 @@
         dr
       ) {
         aJ.background =
-          "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FAyaan-3bn-scaled-e1604505260262.jpg";
+          "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FAyaan-3bn-scaled-e1604505260262.jpg";
         aJ.tag = a;
         aJ.title = aK;
         aJ.description = a;
@@ -33023,11 +33285,10 @@
                               last_name: a,
                               subtitle: a,
                               brief:
-                                '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EGuy Sorman es economista, periodista y filósofo francés. Se ha convertido en uno de los intelectuales más respetados de Europa, donde también ha ejercido diversos cargos políticos. Partidario del liberalismo y defensor de los DDHH, este autor francés es columnista de periódicos como Le Figaro y The Wall Street Journal. Ha escrito decenas de libros, entre los que desatacan \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003EChina, el Imperio de las Mentiras\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E y \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003ELa Economía no Miente\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E. En su último libro, \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003EEl Corazón Americano\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E, promueve las virtudes de la filantropía. \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEstudió en el Instituto de Estudios Políticos de París y en la Escuela Nacional de Administración. Su área de experiencia comprende la economía, y cuenta también con una completa formación periodística y filosófica. Férreo defensor de los principios liberales y del potencial humano, aboga por los ideales de la creatividad y capitalismo moderno.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
+                                '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EGuy Sorman&nbsp;es economista, periodista y filósofo francés. Se ha convertido en uno de los intelectuales más respetados de Europa,&nbsp;donde también ha ejercido diversos cargos políticos. Partidario del liberalismo&nbsp;y defensor de los DDHH, este autor francés es columnista de periódicos como Le Figaro y The Wall Street Journal. Ha escrito decenas de libros, entre&nbsp;los que desatacan \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003EChina, el Imperio de las Mentiras\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E&nbsp;y&nbsp;\u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003ELa Economía no Miente\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E.&nbsp;En su último libro,&nbsp;\u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003EEl Corazón Americano\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E, promueve las virtudes de la filantropía.&nbsp;\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEstudió en el Instituto de Estudios Políticos de París y en la Escuela Nacional de Administración. Su área de experiencia comprende la economía, y cuenta también con una completa formación periodística y filosófica. Férreo defensor de los principios liberales y del potencial humano, aboga por los ideales de la creatividad y capitalismo moderno.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
                               bio_visible: d,
                               bio_title: k,
-                              bio:
-                                '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EGuy Sorman, es economista, periodista y filósofo francés, uno de los más respetados del mundo. Analiza desde su óptica la crisis mundial del COVID19 y sus efectos en la sociedad de hoy. Entre sus planteamientos, responsabilizó a China y criticó fuertemente a los gobiernos de occidente, en especial a Donald Trump.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
+                              bio: '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EGuy Sorman, es economista, periodista y filósofo francés, uno de los más respetados del mundo. Analiza desde su óptica la crisis mundial del COVID19 y sus efectos en la sociedad de hoy. Entre sus planteamientos, responsabilizó a China y criticó fuertemente a los gobiernos de occidente, en especial a Donald Trump.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
                               image:
                                 "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FSorman-e1604694711733.png",
                               numbered_list: {
@@ -33131,11 +33392,10 @@
                               last_name: a,
                               subtitle: a,
                               brief:
-                                '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EAyaan Hirsi Ali nació en Somalia en 1969. A medida que creció, abrazó el Islam y se esforzó por vivir como una devota. Pero más adelante comenzó a cuestionar aspectos de su fe, fue sometida a mutilación genital femenina y su padre le impuso un matrimonio forzado. Escapó a Holanda, donde obtuvo su maestría en Ciencias Políticas, trabajó como investigadora para la Fundación WiardiBeckman y fue electa como integrante del parlamento holandés. Luego fue miembro del Future of Diplomacy Project en el Belfer Center for Science and International Affairs de la Harvard Kennedy School. Fundó la Fundación AHA para proteger y defender los derechos de mujeres en Estados Unidos de prácticas tradicionales nocivas. \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EAyaan Hirsi Ali es defensora de los DDHH, especialmente de los de las mujeres, y cree en una “reforma” musulmana para reconciliar la religión con la modernidad. Fue nombrada una de las “100 personas más influyentes” de la revista TIME de 2005. \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
+                                '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EAyaan Hirsi Ali nació en Somalia en 1969. A medida que creció, abrazó el Islam y se esforzó por vivir como una devota. Pero más adelante comenzó a cuestionar aspectos de su fe, fue sometida a mutilación genital femenina y su padre le impuso un matrimonio forzado. Escapó a Holanda, donde obtuvo su maestría en Ciencias Políticas, trabajó como investigadora para la Fundación WiardiBeckman y fue electa como integrante del parlamento holandés. Luego fue miembro del Future of Diplomacy Project en el Belfer Center for Science and International Affairs de la Harvard Kennedy School. Fundó la Fundación AHA para proteger y defender los derechos de mujeres en Estados Unidos de prácticas tradicionales nocivas.&nbsp;\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EAyaan Hirsi Ali es defensora de los DDHH, especialmente de los de las mujeres, y cree en una “reforma” musulmana para reconciliar la religión con la modernidad. Fue nombrada una de las “100 personas más influyentes” de la revista TIME de 2005. \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
                               bio_visible: d,
                               bio_title: k,
-                              bio:
-                                '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EAyaan Hirsi Ali es escritora, académica y activista por los DD.HH y la igualdad de derechos para las mujeres, especialmente en sociedades musulmanas. Cuenta su experiencia de vida en Somalia, cómo fue sometida a mutilación genital y forzada a casarse. Ha dedicado gran parte de su vida a cuestionar la sumisión y la violencia en sociedades musulmanas y a fomentar el pensamiento crítico. Eso le valió la amenaza de muerte que tiene hasta hoy.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
+                              bio: '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EAyaan Hirsi Ali es escritora, académica y activista por los DD.HH y la igualdad de derechos para las mujeres, especialmente en sociedades musulmanas. Cuenta su experiencia de vida en Somalia, cómo fue sometida a mutilación genital y forzada a casarse. Ha dedicado gran parte de su vida a cuestionar la sumisión y la violencia en sociedades musulmanas y a fomentar el pensamiento crítico. Eso le valió la amenaza de muerte que tiene hasta hoy.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
                               image:
                                 "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FHirsi-2-e1604694483462.png",
                               numbered_list: {
@@ -33311,8 +33571,7 @@
                                 '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EJohn Tomasi es filósofo político en la Universidad de Brown donde es el fundador y director del “Political Theory Project”. Nació en el estado de New Hampshire y cuando era muy pequeño se mudó a Vermont donde creció en un pequeño pueblo llamado Underhill Center, al pie del monte.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEn su libro \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003EFree Market Fairness\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E (Princeton University Press, 2012), analiza las ideas morales de los defensores de la libertad económica y los defensores de la justicia social. Desarrolla una teoría híbrida de la justicia liberal, comprometida tanto con un gobierno limitado como con el mejoramiento material de los pobres. La equidad del libre mercado busca combinar lo inconfundible: capitalismo y democracia, propiedad privada y justicia social, mercados libres y equidad.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E&nbsp;\u003C\u002Fp\u003E\n',
                               bio_visible: d,
                               bio_title: k,
-                              bio:
-                                '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEl filósofo y político de la Universidad de Brown habla sobre su publicación, \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003EFree Market Fairness\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E (Princeton University Press, 2012), donde analiza las ideas morales de los defensores de la libertad económica. Divide la tradición liberal en tres corrientes: el liberalismo clásico, el altoliberalismo y el libertarianismo. Además, propone una nueva corriente, que valore la libertad económica y que reconozca la idea de justicia social. Esa publicación lo ha convertido en uno de los autores actuales más reconocidos del mundo liberal.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
+                              bio: '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEl filósofo y político de la Universidad de Brown habla sobre su publicación, \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003EFree Market Fairness\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E (Princeton University Press, 2012), donde analiza las ideas morales de los defensores de la libertad económica. Divide la tradición liberal en tres corrientes: el liberalismo clásico, el altoliberalismo y el libertarianismo. Además, propone una nueva corriente, que valore la libertad económica y que reconozca la idea de justicia social. Esa publicación lo ha convertido en uno de los autores actuales más reconocidos del mundo liberal.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
                               image:
                                 "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FTomasi-2-e1604694112200.png",
                               numbered_list: {
@@ -33476,8 +33735,7 @@
                               brief: al,
                               bio_visible: d,
                               bio_title: k,
-                              bio:
-                                '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEl escritor peruano, Premio Novel de Literatura, defiende las ideas del liberalismo, tema que aborda en su libro, \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003ELa llamada de la tribu\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E. Este último es un conjunto de ensayos biográficos de pensadores de la tradición filosófica liberal que han ido marcando al autor, a través de su vida, en su propia definición política. También habla sobre la importancia de defender la cultura escrita.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
+                              bio: '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEl escritor peruano, Premio Novel de Literatura, defiende las ideas del liberalismo, tema que aborda en su libro, \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003ELa llamada de la tribu\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E. Este último es un conjunto de ensayos biográficos de pensadores de la tradición filosófica liberal que han ido marcando al autor, a través de su vida, en su propia definición política. También habla sobre la importancia de defender la cultura escrita.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
                               image:
                                 "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMVLL-2-1-e1604693797272.png",
                               numbered_list: {
@@ -33604,8 +33862,7 @@
                                 '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EGuillermo Lasso Mendoza es excandidato a la presidencia de Ecuador, empresario, banquero y político. Autor de los libros \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003EOtro Ecuador es posible\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E y \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003ECartas a mis hijos\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E. Además, es presidente de la Fundación Ecuador Libre, un think tank que busca formular políticas públicas basadas en principios de libertad y solidaridad social.\u003C\u002Fspan\u003E\u003Cspan style="font-weight: 400;"\u003E\u003Cbr \u002F\u003E\n\u003C\u002Fspan\u003E\u003Cspan style="font-weight: 400;"\u003ELuego de 42 años de exitoso trabajo en el sector bancario, en el 2012 decide entrar a la arena política como candidato a la presidencia de su país. Es así como llega hasta el balotaje como líder del Movimiento CREO en las elecciones del 2017. Sin embargo, Lenín Moreno, candidato oficialista Alianza PAIS, ganó la contienda con el 51.16% de los votos contra el 48.84% de Guillermo Lasso, según lo establecido por el Consejo Nacional Electoral, siendo víctima de un evidente intervencionismo por parte del gobierno.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E&nbsp;\u003C\u002Fp\u003E\n',
                               bio_visible: d,
                               bio_title: k,
-                              bio:
-                                '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEl excandidato presidencial de Ecuador expuso sobre las amenazas a la libertad existentes en América Latina. En la conferencia titulada \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003ELa Batalla por la Libertad: El Caso Ecuatoriano\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E abordó el caso de su país y la lucha constante para que sus ciudadanos puedan vivir en un sistema donde la libertad esté garantizada. Lasso es presidente de la Fundación Ecuador Libre, un think tank que busca formular políticas públicas basadas en principios de libertad y solidaridad social.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
+                              bio: '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEl excandidato presidencial de Ecuador expuso sobre las amenazas a la libertad existentes en América Latina. En la conferencia titulada \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003ELa Batalla por la Libertad: El Caso Ecuatoriano\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E abordó el caso de su país y la lucha constante para que sus ciudadanos puedan vivir en un sistema donde la libertad esté garantizada.&nbsp;Lasso es presidente de la Fundación Ecuador Libre, un think tank que busca formular políticas públicas basadas en principios de libertad y solidaridad social.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
                               image: db,
                               numbered_list: {
                                 title: a,
@@ -33749,11 +34006,10 @@
                               last_name: a,
                               subtitle: a,
                               brief:
-                                '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EJonathan Haidt es psicólogo social, el profesor Thomas Cooley de Liderazgo Ético en la Escuela de Negocios Stern de la Universidad de Nueva York. Recibió su BA de la Universidad de Yale y su Ph.D. de la Universidad de Pennsylvania. Fue profesor en la Universidad de Virginia desde 1995 hasta 2011.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003ESu investigación se centra en la moralidad, sus fundamentos emocionales, las variaciones culturales, y curso de desarrollo. Utiliza su investigación para ayudar a las personas a entender y respetar los motivos morales de la gente. Fue nombrado como “uno de los 100 mejores pensadores globales” en 2012 por la revista Foreign Policy y uno de los 65 “World Thinkers of 2013” de la revista Prospect.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
+                                '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EJonathan Haidt es psicólogo social, el profesor Thomas Cooley de Liderazgo Ético en la Escuela de Negocios Stern de la Universidad de Nueva York. Recibió su BA de la Universidad de Yale y su Ph.D.&nbsp;de la Universidad de Pennsylvania. Fue profesor en la Universidad de Virginia desde 1995 hasta 2011.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003ESu investigación se centra en la moralidad, sus fundamentos emocionales, las variaciones culturales, y curso de desarrollo. Utiliza su investigación para ayudar a las personas a entender y respetar los motivos morales de la gente. Fue nombrado como “uno de los 100 mejores pensadores globales” en 2012 por la revista Foreign Policy y uno de los 65 “World Thinkers of 2013” de la revista Prospect.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
                               bio_visible: d,
                               bio_title: k,
-                              bio:
-                                '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEl autor de \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003EThe Righteous Mind\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E aborda el creciente tribalismo en la sociedad actual y llama a valorar la diversidad política como el tipo de diversidad más importante. El destacado psicólogo social y profesor de la Stern School of Business de la Universidad de Nueva York, ha estado estudiando los fundamentos morales de la política y las formas de superar las “guerras culturales” para promover una mayor civilidad en la política. \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
+                              bio: '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEl autor de \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003EThe Righteous Mind\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E aborda el creciente tribalismo en la sociedad actual y llama a valorar la diversidad política como el tipo de diversidad más importante. El destacado psicólogo social y profesor de la Stern School of Business de la Universidad de Nueva York, ha estado estudiando los fundamentos morales de la política y las formas de superar las “guerras culturales” para promover una mayor civilidad en la política.&nbsp;\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
                               image: de,
                               numbered_list: {
                                 title: a,
@@ -33896,11 +34152,10 @@
                               last_name: a,
                               subtitle: a,
                               brief:
-                                '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EDeirdre Nansen McCloskey enseñó economía, historia, inglés y comunicación en la Universidad de Illinois en Chicago, desde el año 2000 al 2015. Ha escrito 17 libros y cerca de 400 publicaciones en temas que abarcan desde economía técnica y teoría estadística, hasta promoción transgénero y las virtudes éticas de los burgueses. \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEs conocida por ser una economista conservadora al estilo de los alumnos Chicago-School (fue académica del Departamento de Economía desde 1968 a 1980). De sí misma dice que es literalmente, cuantitativa, postmoderna, pro libre mercado, progresiva en temas episcopales, la mujer del medio oeste de Boston que fue una vez un hombre. \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
+                                '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EDeirdre Nansen McCloskey enseñó economía, historia, inglés y comunicación en la Universidad de Illinois en Chicago, desde el año 2000 al 2015. Ha escrito 17 libros y cerca de 400 publicaciones en temas que abarcan desde economía técnica y teoría estadística, hasta promoción transgénero y las virtudes éticas de los burgueses.&nbsp;\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEs conocida por ser una economista conservadora al estilo de los alumnos&nbsp;Chicago-School&nbsp;(fue académica del Departamento de Economía desde 1968 a 1980). De sí misma dice que es literalmente, cuantitativa, postmoderna, pro libre mercado, progresiva en temas episcopales, la mujer del medio oeste de Boston que fue una vez un hombre. \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
                               bio_visible: d,
                               bio_title: k,
-                              bio:
-                                '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003ELa célebre economista Deirdre McCloskey aborda tanto su crítica al enfoque que impera en el capitalismo, como las lecciones a partir de su cambio de género, ámbitos que explican tanto su obra intelectual como su campaña antidiscriminación. No duda en romper paradigmas haciendo un rescate del capitalismo y sus virtudes, como la capacidad de dar forma a un tipo de sociedad que podría educarnos en la diversidad. \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
+                              bio: '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003ELa célebre economista Deirdre McCloskey aborda tanto su crítica al enfoque que impera en el capitalismo, como las lecciones a partir de su cambio de género, ámbitos que explican tanto su obra intelectual como su campaña antidiscriminación. No duda en romper paradigmas haciendo un rescate del capitalismo y sus virtudes, como la capacidad de dar forma a un tipo de sociedad que podría educarnos en la diversidad.&nbsp;\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
                               image:
                                 "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMcCloskey-2-e1604691452347.png",
                               numbered_list: {
@@ -34052,11 +34307,10 @@
                               last_name: a,
                               subtitle: a,
                               brief:
-                                '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003ELuigi Zingales es un reconocido economista italiano que se ha dedicado a la pedagogía y a la investigación. Su trabajo ha abarcado desde la gobernanza corporativa hasta los efectos económicos de la cultura. Ayudó a desarrollar el Financial Trust Index, índice diseñado para monitorear los niveles de confianza de los estadounidenses hacia su sistema financiero. Es parte de Chicago Booth, se desempeña como investigador para el National Bureau of Economic Research, para el Center for Economic Policy Research, y para el European Governance Institute. \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003ESu investigación le ha valido los premios Bernácer Prize (2003), Nasdaq (2002), y el premio National Science Foundation Grant en economía. Su libro, \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003ESalvando al capitalismo de los capitalistas\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E, escrito junto con Raghuram G. Rajan, ha sido aclamado como “una de las defensas más poderosas del libre mercado jamás escrita”.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
+                                '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003ELuigi Zingales es un reconocido economista italiano que se ha dedicado a la pedagogía y a la investigación. Su trabajo ha abarcado desde la gobernanza corporativa hasta los efectos económicos de la cultura. Ayudó a desarrollar el Financial Trust Index, índice diseñado para monitorear los niveles de confianza de los estadounidenses hacia su sistema financiero. Es parte de Chicago Booth, se desempeña como investigador para el&nbsp;National Bureau of Economic Research, para el Center for&nbsp;Economic Policy Research, y para el&nbsp;European Governance Institute.&nbsp;\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003ESu investigación le ha valido los premios Bernácer Prize (2003), Nasdaq (2002), y el premio National Science Foundation Grant en economía. Su libro,&nbsp;\u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003ESalvando al capitalismo de los capitalistas\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E, escrito junto con Raghuram G. Rajan, ha sido aclamado como “una de las defensas más poderosas del libre mercado jamás escrita”.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
                               bio_visible: d,
                               bio_title: k,
-                              bio:
-                                '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEl economista de la escuela de negocios Booth de la Universidad de Chicago comparte las reflexiones de su libro \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003ESalvando al capitalismo de los capitalistas\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E. Asegura que lo importante no es la desigualdad, sino el crecimiento y la movilidad. Además, analiza el modelo económico chileno y señala que el crecimiento ha beneficiado a todos en nuestro país.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
+                              bio: '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEl economista de la escuela de negocios Booth de la Universidad de Chicago comparte las reflexiones de su libro \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003ESalvando al capitalismo de los capitalistas\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E. Asegura que lo importante no es la desigualdad, sino el crecimiento y la movilidad. Además, analiza el modelo económico chileno y señala que el crecimiento ha beneficiado a todos en nuestro país.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
                               image: di,
                               numbered_list: {
                                 title: a,
@@ -34182,11 +34436,10 @@
                               last_name: a,
                               subtitle: a,
                               brief:
-                                '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003ERudy Giuliani es abogado de la Universidad de Nueva York y fue alcalde de la misma ciudad. En ese cargo enfrentó la mayor amenaza a la seguridad en Estados Unidos: el ataque a las torres gemelas. Gracias a su manejo se ganó el apodo de \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003EEl alcalde de Estados Unidos\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E. Fue nombrado personaje del año por Time, condecorado por la Reina Isabel II y obtuvo el premio Ronald Reagan Presidential Freedom.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EDebido a la implementación de su por su programa municipal \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003ECompStat,\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E con el que disminuyó la delincuencia, recibió el premio de “Innovaciones en el Gobierno” entregado por la Escuela de Gobierno John F. Kennedy de la U. de Harvard. Actualmente se dedica al negocio de la seguridad con su empresa Giuliani Partners LLC.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
+                                '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003ERudy Giuliani es abogado de la Universidad de Nueva York y fue alcalde de la misma ciudad. En ese cargo enfrentó la mayor amenaza a la seguridad en Estados Unidos: el ataque a las torres gemelas. Gracias a su manejo se ganó el apodo de \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003EEl alcalde de Estados Unidos\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E. Fue nombrado personaje del año por Time, condecorado por la Reina Isabel II y obtuvo el premio Ronald Reagan Presidential Freedom.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EDebido a la implementación de su por su programa municipal \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003ECompStat,\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E con el que disminuyó la delincuencia, recibió el premio de&nbsp;“Innovaciones en el Gobierno”&nbsp;entregado por la Escuela de Gobierno John F. Kennedy de la U. de Harvard. Actualmente se dedica al negocio de la seguridad con su empresa Giuliani Partners LLC.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
                               bio_visible: d,
                               bio_title: k,
-                              bio:
-                                '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEl ex alcalde de Nueva York e impulsor del plan \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003ETolerancia Cero\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E, entrega consejos para disminuir la delincuencia en nuestro país. Propone que las policías trabajen más unidas, que su labor sea proactiva para prevenir y que haya fuerzas operativas (unidad temporal establecida para trabajar en una operación concreta) para atacar ciertos delitos. Sin embargo, enfatiza en que lo más importante para lograrlo es la voluntad del poder político.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
+                              bio: '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEl ex alcalde de Nueva York e impulsor del plan \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003ETolerancia Cero\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E, entrega consejos para disminuir la delincuencia en nuestro país. Propone que las policías trabajen más unidas, que su labor sea proactiva para prevenir y que haya fuerzas operativas (unidad temporal establecida para trabajar en una operación concreta) para atacar ciertos delitos. Sin embargo, enfatiza en que lo más importante para lograrlo es la voluntad del poder político.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
                               image: dl,
                               numbered_list: {
                                 title: a,
@@ -34333,11 +34586,10 @@
                               last_name: a,
                               subtitle: a,
                               brief:
-                                "\u003Cp\u003EYoani Sánchez es una aclamada bloguera, periodista independiente y fundadora de 14ymedio, el primer diario digital independiente de Cuba. Antes, alcanzó notoriedad con su blog Generación Y, donde hace una descripción crítica de su país. Fue traducido a diecisiete idiomas por un equipo de voluntarios.\u003C\u002Fp\u003E\n\u003Cp\u003ESánchez ha recibido numerosos reconocimientos internacionales por su trabajo, incluyendo el Premio Ortega y Gasset, el más alto reconocimiento al periodismo digital en España; el premio Maria Moors Cabot de Columbia University; el Premio Héroe Mundial de la Libertad de Prensa del Instituto Internacional de Prensa; y el Premio Prince Claus de Holanda. La revista Time la seleccionó en 2008 entre las cien personas más influyentes del mundo.\u003C\u002Fp\u003E\n",
+                                "\u003Cp\u003EYoani Sánchez es una aclamada bloguera, periodista independiente y fundadora de 14ymedio, el primer diario digital independiente de Cuba. Antes, alcanzó notoriedad con su&nbsp;blog&nbsp;Generación Y, donde hace una descripción crítica de su país. Fue traducido a diecisiete idiomas por un equipo de voluntarios.\u003C\u002Fp\u003E\n\u003Cp\u003ESánchez ha recibido numerosos reconocimientos internacionales por su trabajo, incluyendo el Premio Ortega y Gasset, el más alto reconocimiento al periodismo digital en España; el premio Maria Moors Cabot de Columbia University; el Premio Héroe Mundial de la Libertad de Prensa del Instituto Internacional de Prensa; y el Premio Prince Claus de Holanda. La revista&nbsp;Time&nbsp;la seleccionó en 2008 entre las cien personas más influyentes del mundo.\u003C\u002Fp\u003E\n",
                               bio_visible: d,
                               bio_title: k,
-                              bio:
-                                '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003ELa aclamada bloguera, periodista independiente cuenta cómo ve a la Cuba actual, a más de 50 años de dictadura de Fidel Castro y la influencia que esto deja en el gobierno de su hermano, Raúl. Asegura que el pueblo cubano quiere un cambio, pero que esto no debe venir de influencias foráneas, sino que debe provenir de las mismas personas que viven ahí.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
+                              bio: '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003ELa aclamada bloguera, periodista independiente cuenta cómo ve a la Cuba actual, a más de 50 años de dictadura de Fidel Castro y la influencia que esto deja en el gobierno de su hermano, Raúl. Asegura que el pueblo cubano quiere un cambio, pero que esto no debe venir de influencias foráneas,&nbsp;sino&nbsp;que debe provenir de las mismas personas que viven ahí.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
                               image:
                                 "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FSánchez-e1604689792660.png",
                               numbered_list: {
@@ -34455,11 +34707,10 @@
                               last_name: a,
                               subtitle: a,
                               brief:
-                                "\u003Cp\u003EJesse Norman es político, destacado filósofo y parlamentario inglés, representante del Partido Conservador. Es uno de los cien políticos conservadores más influyentes de Inglaterra, según «The Telegraph» y fue ministro del Gobierno de Theresa May. Es autor de los libros: Edmund Burke: el primer conservador, The Big Society: The Anatomy of the New Politics.\u003C\u002Fp\u003E\n\u003Cp\u003EHa sido diputado por Hereford y South Herefordshire. Antes de entrar en política, Norman fue director de Barclays y más tarde se unió a la Universidad de Londres como profesor para recibir el grado de Ph.D.\u003C\u002Fp\u003E\n",
+                                "\u003Cp\u003EJesse Norman es político, destacado filósofo y parlamentario inglés, representante del Partido Conservador. Es uno de los cien políticos conservadores más influyentes de Inglaterra, según «The Telegraph» y fue ministro del Gobierno de Theresa May.&nbsp;Es autor de los libros: Edmund Burke: el primer conservador, The Big Society: The Anatomy of the New Politics.\u003C\u002Fp\u003E\n\u003Cp\u003EHa sido&nbsp;diputado&nbsp;por&nbsp;Hereford&nbsp;y&nbsp;South Herefordshire. Antes de entrar en política, Norman fue director de&nbsp;Barclays&nbsp;y más tarde se unió a la&nbsp;Universidad de Londres&nbsp;como profesor para recibir el grado de&nbsp;Ph.D.\u003C\u002Fp\u003E\n",
                               bio_visible: d,
                               bio_title: k,
-                              bio:
-                                '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEl político conservador británico, filósofo y autor, es considerado uno de los ideólogos del “nuevo conservadurismo” y fue el gran asesor intelectual de David Cameron. En su conferencia \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003E¿Protagonistas o espectadores? La otra mirada sobre el rol de la sociedad civil\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E, comparte sus experiencias y el mensaje de su libro \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003ELa gran sociedad\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E. Ahí señala, entre otras cosas, que la felicidad no está en hacer lo que uno quiera, sino en lograr una vida buena, que implica la vida en sociedad, y la participación en las instituciones.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
+                              bio: '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEl político conservador británico, filósofo y autor, es considerado uno de los ideólogos del “nuevo conservadurismo” y fue el gran asesor intelectual de David Cameron. En su conferencia \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003E¿Protagonistas o espectadores? La otra&nbsp;mirada sobre el rol de la sociedad civil\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E,&nbsp;comparte sus experiencias y el&nbsp;mensaje de su libro \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003ELa gran sociedad\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E. Ahí señala, entre otras cosas, que la felicidad no está en hacer lo que uno quiera, sino en lograr una vida buena, que implica la vida en sociedad, y la participación en las instituciones.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
                               image: do_,
                               numbered_list: {
                                 title: a,
@@ -34551,11 +34802,10 @@
                               last_name: a,
                               subtitle: a,
                               brief:
-                                "\u003Cp\u003ENiall Ferguson, Master of Arts y Doctor en Filosofía, tiene la Cátedra Laurence A. Tisch de Historia en la Universidad de Harvard. Es Senior Fellow de la Institución Hoover en la Universidad de Stanford, y Senior Research Fellow en Jesus College, Oxford. Es uno de los más importantes historiadores de Gran Bretaña y la revista Time lo consideró una de las cien personas más influyentes del mundo.\u003C\u002Fp\u003E\n\u003Cp\u003EEs autor de 14 libros, entre ellos El imperio británico &#8211; Cómo Gran Bretaña forjó el orden mundial, El ascenso del dinero &#8211; Una historia financiera del mundo, La gran degeneración &#8211; Cómo decaen las instituciones y mueren las economías, Civilización: Occidente y el resto. Ferguson está casado con la reconocida escritora y activista de derechos humanos Ayaan Hirsi Ali.\u003C\u002Fp\u003E\n",
+                                "\u003Cp\u003ENiall Ferguson, Master of Arts y Doctor en Filosofía, tiene la Cátedra Laurence A. Tisch de Historia en la Universidad de Harvard. Es Senior Fellow de la Institución Hoover en la Universidad de Stanford, y Senior Research Fellow en Jesus College, Oxford. Es uno de los más importantes historiadores de Gran Bretaña y la revista&nbsp;Time&nbsp;lo consideró una de las cien personas más influyentes del mundo.\u003C\u002Fp\u003E\n\u003Cp\u003EEs autor de 14 libros, entre ellos&nbsp;El&nbsp;imperio&nbsp;británico &#8211; Cómo Gran Bretaña forjó el orden mundial, El ascenso del dinero &#8211;&nbsp;Una historia financiera del mundo, La gran degeneración &#8211; Cómo decaen las instituciones y mueren las economías, Civilización:&nbsp;Occidente y&nbsp;el resto. Ferguson está casado con la reconocida escritora y activista de derechos humanos Ayaan Hirsi Ali.\u003C\u002Fp\u003E\n",
                               bio_visible: d,
                               bio_title: k,
-                              bio:
-                                "\u003Cp\u003EEl historiador y escritor británico, profesor de la Universidad de Harvard, y uno de los intelectuales más influyentes, dicta una conferencia sobre el capitalismo y la desigualdad. Plantea que la clave es no fijarse demasiado en la distribución del ingreso y la riqueza, sino enfocarse más en la movilidad social y las oportunidades. Repasa el desarrollo nacional de las últimas cuatro décadas y se enfoca en las reformas educacionales y en una propuesta liberal.\u003C\u002Fp\u003E\n",
+                              bio: "\u003Cp\u003EEl historiador y escritor británico, profesor de la Universidad de Harvard, y uno de los intelectuales más influyentes, dicta una conferencia sobre el capitalismo y la desigualdad. Plantea que la clave es no fijarse demasiado en la distribución del ingreso y la riqueza, sino enfocarse más en la movilidad social y las oportunidades. Repasa el desarrollo nacional de las últimas cuatro décadas y se enfoca en las reformas educacionales y en una propuesta liberal.\u003C\u002Fp\u003E\n",
                               image: dq,
                               numbered_list: {
                                 title: a,
@@ -35497,7 +35747,7 @@
             auth: { user: w, loggedIn: b, strategy: "local" },
           },
           serverRendered: d,
-          routePath: "\u002Fconferencias",
+          routePath: "\u002Fconferencias\u002F",
           config: { googleAnalytics: { id: "UA-167207332-4" } },
         };
       })(
@@ -35517,7 +35767,7 @@
         "¡Imperdibles!",
         "book",
         "La Tercera",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002Fla_tercera.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002Fla_tercera.png",
         "Gobierno y política",
         "gobierno-y-politica",
         78,
@@ -35544,33 +35794,33 @@
         "Óscar Naranjo",
         "Paul Polman",
         "UAI",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002Fuai.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002Fuai.png",
         "Futuro y tecnología",
         "futuro-y-tecnologia",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMVLL_A2.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMVLL_A2.png",
         "El Mercurio",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002Fel_mercurio.png",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F10\u002FDuque-Marquez-1-e1606403786380.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002Fel_mercurio.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F10\u002FDuque-Marquez-1-e1606403786380.png",
         "188",
         "162.158.62.83",
         "2020-11-29 23:30:58",
         "2020-12-02 13:45:29",
         "30\u002F07\u002F2020 - 18:30",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMoises-Naím.png",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMoises-Naím-1.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMoises-Naím.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMoises-Naím-1.png",
         "2020-11-29 23:27:11",
         "2020-11-29 23:28:17",
         "2020-11-29 23:29:59",
         "2020-12-01 22:27:44",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMoro-1-e1606403731134.png",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMacri-2-1-e1606403690932.png",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FNaranjo-2-2-e1606402956161.png",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMVLL_A2-1-e1606402876713.png",
-        "\u003Cp\u003EMario Vargas Llosa, escritor y periodista peruano, es Premio Nobel de Literatura 2010. Nació en Arequipa en 1936 y es considerado uno de los más importantes novelistas y ensayistas contemporáneos. Alcanzó la fama en los 60´ con novelas como La ciudad y los perros (1962), La casa verde (1965) y Conversación en La Catedral (1969). Continuó escribiendo prolíficamente en varios géneros literarios, incluyendo la crítica literaria y el periodismo.\u003C\u002Fp\u003E\n\u003Cp\u003ESu obra ha sido traducida a más de 30 idiomas y le ha merecido premios como el Cervantes en 1994- entendido como el más importante de habla hispana- el Premio Leopoldo Alas (1959), el Príncipe de Asturias de las Letras (1986) y el Planeta (1993). Muchos de sus escritos están influidos por su experiencia en su país.\u003C\u002Fp\u003E\n",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMoro-1-e1606403731134.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMacri-2-1-e1606403690932.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FNaranjo-2-2-e1606402956161.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMVLL_A2-1-e1606402876713.png",
+        "\u003Cp\u003EMario Vargas Llosa, escritor y periodista peruano, es Premio Nobel de Literatura 2010. Nació en Arequipa en 1936 y es considerado uno de los más importantes novelistas y ensayistas contemporáneos. Alcanzó la fama en los 60´&nbsp;con novelas como&nbsp;La ciudad y los perros&nbsp;(1962),&nbsp;La casa verde&nbsp;(1965) y&nbsp;Conversación en La Catedral&nbsp;(1969). Continuó escribiendo prolíficamente en varios&nbsp;géneros literarios, incluyendo la&nbsp;crítica literaria&nbsp;y el&nbsp;periodismo.\u003C\u002Fp\u003E\n\u003Cp\u003ESu obra ha sido traducida a más de 30 idiomas y le ha merecido premios como el Cervantes en 1994- entendido como el más importante de habla hispana- el Premio Leopoldo Alas (1959), el&nbsp;Príncipe de Asturias de las Letras&nbsp;(1986) y el&nbsp;Planeta&nbsp;(1993). Muchos de sus escritos están influidos por su experiencia en su país.\u003C\u002Fp\u003E\n",
         "La llamada de la tribu (2018)",
         "La autobiografía intelectual del Premio Nobel de Literatura. Una cartografía de los pensadores liberales que le ayudaron a desarrollar un nuevo cuerpo de ideas. Vargas Llosa es autor, y reconocido, de varias noveles como La ciudad y los perros, La casa verde y Conversación en La Catedral.",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FVARGAS-LLOSA.jpg",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FPolman-3-e1606403027455.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FVARGAS-LLOSA.jpg",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FPolman-3-e1606403027455.png",
         "Guy Sorman",
         "Ayaan Hirsi Ali",
         "John Tomasi",
@@ -35585,11 +35835,11 @@
         "¿Sabías qué?",
         "Conferencias: Mario Vargas Llosa | La Otra Mirada",
         "04\u002F06\u002F2020 - 18:30",
-        "conferencias.html\u002F\u002Fwww.youtube.com\u002Fwatch?v=Ld8dkr_pnGY",
+        "https:\u002F\u002Fwww.youtube.com\u002Fwatch?v=Ld8dkr_pnGY",
         '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EMario Vargas Llosa es escritor, periodista y político peruano, ganador del Premio Novel de Literatura. En su segunda conferencia para La Otra Mirada, plantea el tema de la libertad en la pandemia desatada por el COVID 19 este 2020. Plantea que la crisis no debe ser enfrentada sacrificando los derechos y libertades que ha costado tanto conseguir.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E&nbsp;\u003C\u002Fp\u003E\n\u003Cp\u003E&nbsp;\u003C\u002Fp\u003E\n',
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMVLL_A-e1604695773862.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMVLL_A-e1604695773862.png",
         "Gobierno de Chile",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002Fgobierno.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002Fgobierno.png",
         {},
         "Conferencias",
         Array(4),
@@ -35599,14 +35849,14 @@
         "ivan-duque",
         "06\u002F10\u002F2020 - 18:30",
         "El actual Presidente de Colombia examina su gobierno y el panorama político regional. ",
-        "conferencias.html\u002F\u002Fwww.youtube.com\u002Fwatch?v=J6plxDBnz5A&t=4s",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FDuque-Marquez.png",
-        '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EIván Duque Márquez es el actual Presidente de Colombia. Fue jefe de la división de Cultura, Creatividad y Solidaridad del BID, consultor de la presidencia de la misma institución, y consejero principal por Colombia. Fue senador y es autor de varios libros. También se ha desempeñado como columnista y profesor. \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEs abogado de la Universidad Sergio Arboleda, con estudios mayores en filosofía y humanidades. Es experto en temas económicos, con estudios ejecutivos en Harvard, y con maestrías de Georgetown, en Gerencia de Políticas Públicas, y de American University, en Derecho Económico. En el 2016 fue elegido como uno de los líderes más destacados del país por la Revista Semana y la Fundación Colombia Líder.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
-        '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEl actual Presidente de Colombia, abogado, con estudios en filosofía y humanidades habla sobre su gobierno y sobre Latinoamérica. Remarca sus logros en materia de seguridad, economía, reducción de cultivos de coca y su enfrentamiento hacia la crisis migratoria de venezolanos. Analiza el escenario de la región y advierte que muchos temas no son de izquierda ni de derecha, son de sentido común y necesitan menos política y más administración. \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F10\u002FDuque-Marquez-e1604688301791.png",
+        "https:\u002F\u002Fwww.youtube.com\u002Fwatch?v=J6plxDBnz5A&t=4s",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FDuque-Marquez.png",
+        '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EIván Duque Márquez es el actual Presidente de Colombia. Fue jefe de la división de Cultura, Creatividad y Solidaridad del BID, consultor de la presidencia de la misma institución, y consejero principal por Colombia. Fue senador y es autor de varios libros. También se ha desempeñado como columnista y profesor.&nbsp;\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEs abogado de la Universidad Sergio Arboleda, con estudios mayores en filosofía y humanidades. Es experto en temas económicos, con estudios ejecutivos en Harvard, y con maestrías de Georgetown, en Gerencia de Políticas Públicas, y de American University, en Derecho Económico. En el 2016 fue elegido como uno de los líderes más destacados del país por la Revista Semana y la Fundación Colombia Líder.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
+        '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEl actual Presidente de Colombia, abogado, con estudios en filosofía y humanidades habla sobre su gobierno y sobre Latinoamérica. Remarca sus logros en materia de seguridad, economía, reducción de cultivos de coca y su enfrentamiento hacia la crisis migratoria de venezolanos. Analiza el escenario de la región y advierte que muchos temas no son de izquierda ni de derecha, son de sentido común y necesitan menos política y más administración.&nbsp;\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F10\u002FDuque-Marquez-e1604688301791.png",
         "La Economía Naranja (2013)",
         "Escrito en conjunto con Pedro Felipe Buitrago. La economía creativa, en adelante la Economía Naranja, representa una riqueza enorme basada en el talento, la propiedad intelectual, la conectividad y por supuesto, la herencia cultural de nuestra región. Es una importante oportunidad de desarrollo que Latinoamérica no puede perder. ",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F10\u002Fduque.jpg",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F10\u002Fduque.jpg",
         "21",
         "Probando la funcionalidad de comentarios",
         "23",
@@ -35619,15 +35869,15 @@
         "Moisés Naím, Periodista venezolano que hace un análisis profundo de América Latina. Reflexión y debate en La Otra Mirada.",
         "moises-naim",
         "El periodista venezolano hace un análisis de América Latina, su crecimiento y desarrollo.",
-        "conferencias.html\u002F\u002Fwww.youtube.com\u002Fwatch?v=l1DbR3EQZtI&t=256s",
+        "https:\u002F\u002Fwww.youtube.com\u002Fwatch?v=l1DbR3EQZtI&t=256s",
         '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EMoisés Naím es economista, Senior Associate del Carnegie Endowment for International Peace, autor de varios libros en materia de política internacional y uno de los columnistas más leídos en Iberoamérica. Altamente respetado como uno de los grandes líderes de opinión, Moisés Naím comprende mejor que nadie las realidades políticas de diferentes países y su impacto en la economía. Es reconocido por su especial habilidad para identificar las tendencias económicas, sociales y políticas que están cambiando al mundo. \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
         '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEs periodista, escritor y analista político, uno de los intelectuales más destacados del mundo. En su libro \u003C\u002Fspan\u003E\u003Ci\u003E\u003Cspan style="font-weight: 400;"\u003EEl fin del poder\u003C\u002Fspan\u003E\u003C\u002Fi\u003E\u003Cspan style="font-weight: 400;"\u003E, hace un análisis para entender lo que está ocurriendo en estos días, donde dice, el poder es más fácil de obtener, más difícil de manejar y más fácil de perder. Identifica 5 riesgos a los que nos enfrentamos y a partir de ello, analiza la situación en Latinoamérica. \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
         "El fin del poder (2013)",
         "El poder está cambiando de manos: los líderes actuales tienen menos poder que sus antecesores, y el potencial para que ocurran cambios repentinos y radicales es mayor que nunca. Naím describe la lucha entre los grandes actores antes dominantes y los nuevos micropoderes que ahora les desafían en todos los ámbitos de la actividad humana.",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FNAiM.jpg",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FNAiM.jpg",
         "Conferencia completa | Moisés Naím",
-        "conferencias.html\u002F\u002Fwww.youtube.com\u002Fwatch?v=mm8bDMegZik",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FCaptura-de-Pantalla-2020-11-30-a-las-15.27.23.png",
+        "https:\u002F\u002Fwww.youtube.com\u002Fwatch?v=mm8bDMegZik",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FCaptura-de-Pantalla-2020-11-30-a-las-15.27.23.png",
         "18",
         "162.158.63.208",
         "Comentario de prueba",
@@ -35645,104 +35895,153 @@
         "Sergio Moro, el magistrado, escritor y catedrático habla del famoso caso Lava Jato. Reflexión y debate con La Otra Mirada.",
         "sergio-moro",
         "El juez a cargo del caso habla de la Operación Lava Jato",
-        "conferencias.html\u002F\u002Fwww.youtube.com\u002Fwatch?v=erbqSsUBK0k&t=12s",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMoro.png",
-        '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003ESergio Moro es jurista, ex magistrado y profesor de derecho brasileño. Fue juez federal y Ministro de Justicia y Seguridad Pública de Brasil bajo el presidente Jair Bolsonaro. \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003ESe especializó en delitos financieros. Moro ganó una enorme notoriedad nacional e internacional por comandar, entre marzo de 2014 y noviembre de 2018, el juicio en primera instancia de los crímenes identificados en la Operación Lava Jato, que, según el ministerio Público Federal, es el mayor caso de corrupción y lavado de dinero calculado en Brasil. \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
-        '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003ESergio Moro dicta una conferencia poco después de su renuncia al cargo de Ministro de Justicia y Seguridad Pública de Jail Bolsonaro, hecho que agravó más aún la crisis política que golpea al Palacio de Planalto. Se refiere al caso Lava Jato, en el que estuvo al mando, a la condena de Lula da Silva y a la situación política de Brasil. \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMoro-2-e1604687330943.png",
+        "https:\u002F\u002Fwww.youtube.com\u002Fwatch?v=erbqSsUBK0k&t=12s",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMoro.png",
+        '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003ESergio Moro es jurista, ex magistrado y profesor de derecho brasileño. Fue juez federal y Ministro de Justicia y Seguridad Pública de Brasil bajo el presidente Jair Bolsonaro.&nbsp;\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003ESe especializó en delitos financieros. Moro ganó una enorme notoriedad nacional e internacional por comandar, entre marzo de 2014 y noviembre de 2018, el juicio en primera instancia de los crímenes identificados en la Operación Lava Jato, que, según el ministerio Público Federal, es el mayor caso de corrupción y lavado de dinero calculado en Brasil.&nbsp;\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
+        '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003ESergio Moro dicta una conferencia poco después de su renuncia al cargo de Ministro de Justicia y Seguridad Pública de Jail Bolsonaro, hecho que agravó más aún la&nbsp;crisis política&nbsp;que golpea al Palacio de Planalto. Se refiere al caso Lava Jato, en el que estuvo al mando, a la condena de Lula da Silva y a la situación política de Brasil. \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMoro-2-e1604687330943.png",
         "Crimen de Lavado de Dinero, Editora Saraiva, 2010.",
         "El delito de blanqueo de capitales es abordado en profundidad en este trabajo, que aclara las particularidades de este delito con un equilibrio entre enfoques prácticos y teóricos, sin renunciar a la carga crítica que requiere el tema.",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FLIBRO-MORO.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FLIBRO-MORO.png",
         391,
         "Conferencias: Mauricio Macri | La Otra Mirada",
         "Mauricio Macri, el empresario y ex presidente de Argentina entrega sus impresiones sobre Latinoamérica. Reflexiona con La Otra Mirada.",
         "mauricio-macri",
         "08\u002F07\u002F2020 - 18:30",
         "El expresidente de Argentina entrega sus impresiones sobre Latinoamérica.",
-        "conferencias.html\u002F\u002Fwww.youtube.com\u002Fwatch?v=uGrPdngMZ7A",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMacri-2.png",
+        "https:\u002F\u002Fwww.youtube.com\u002Fwatch?v=uGrPdngMZ7A",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMacri-2.png",
         '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EMauricio Macri es un político, ejecutivo, empresario y dirigente deportivo argentino, que ejerció la presidencia de su país entre 2015 y 2019. Desde 2020 se desempeña como presidente ejecutivo de la Fundación FIFA. Anteriormente fue presidente del Club Atlético Boca Juniors entre 1995 y 2007, diputado nacional por la Ciudad Autónoma de Buenos Aires entre 2005 y 2007, y jefe de gobierno de ese mismo distrito por dos períodos (2007-2011; 2011-2015).\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEs Ingeniero Civil en la Universidad Católica Argentina y completó su formación con distintos estudios de Economía y Finanzas en nuestro país y en el exterior.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
-        "\u003Cp\u003E¿Cómo ha sobrevivido el régimen venezolano? ¿Qué hace falta para que caiga Maduro? ¿Cómo afecta la pandemia la relación entre Argentina y Brasil? ¿Cuáles serán las consecuencias económicas de esta? ¿Tendremos una recuperación de corto o largo plazo? La Otra Mirada de Latinoamérica en los ojos del ingeniero, empresario, ex Jefe del Gobierno de Buenos Aires y expresidente de Argentina, Mauricio Macri.\u003C\u002Fp\u003E\n",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002Fmacri-e1604687231690.png",
+        "\u003Cp\u003E¿Cómo ha sobrevivido el régimen venezolano? ¿Qué hace falta para que caiga&nbsp;Maduro? ¿Cómo afecta la&nbsp;pandemia&nbsp;la relación entre&nbsp;Argentina&nbsp;y&nbsp;Brasil? ¿Cuáles serán las consecuencias económicas de esta? ¿Tendremos una recuperación de corto o largo plazo?&nbsp;La Otra Mirada&nbsp;de&nbsp;Latinoamérica en los ojos del ingeniero, empresario, ex Jefe del Gobierno de Buenos Aires y expresidente de Argentina, Mauricio Macri.\u003C\u002Fp\u003E\n",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002Fmacri-e1604687231690.png",
         "Extractos conferencia | Mauricio Macri",
-        "conferencias.html\u002F\u002Fwww.youtube.com\u002Fwatch?v=e8n8jlR1mfI&list=PLa0Gw9ShzwwWweHSEfUHmqdLWPepNRqfo&index=5",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FCaptura-de-Pantalla-2020-11-27-a-las-16.45.12.png",
+        "https:\u002F\u002Fwww.youtube.com\u002Fwatch?v=e8n8jlR1mfI&list=PLa0Gw9ShzwwWweHSEfUHmqdLWPepNRqfo&index=5",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FCaptura-de-Pantalla-2020-11-27-a-las-16.45.12.png",
         619,
         "Conferencias: Óscar Naranjo | La Otra Mirada",
         "Revisa la conferencia de Óscar Naranjo: El ex director de la Policía Nacional de Colombia expone sobre el narcotráfico. Reflexiona y debate con La Otra Mirada.",
         "oscar-naranjo",
         "18\u002F06\u002F2020 - 18:30",
         "El ex director de la Policía Nacional de Colombia expone sobre el narcotráfico.",
-        "conferencias.html\u002F\u002Fwww.youtube.com\u002Fwatch?v=A0mRUTTPt30&t=43s",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FNaranjo-2-1.png",
+        "https:\u002F\u002Fwww.youtube.com\u002Fwatch?v=A0mRUTTPt30&t=43s",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FNaranjo-2-1.png",
         '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EÓscar Naranjo es exdirector de la Policía Nacional y ejerció el cargo de Vicepresidente de Colombia de 2017 a 2018. Es experto en inteligencia y contrainteligencia policial y fue una pieza fundamental en la lucha contra el narcotráfico. Participó en el desbaratamiento de los carteles de Cali y Medellín y en la liberación de Ingrid Betancourt. Ha sido nombrado «el mejor policía del mundo».\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEl General Naranjo es, con justa razón, uno de los líderes más respetados de Colombia y América Latina. Es reconocido no solo por su especial habilidad en temas de inteligencia y seguridad, sino que, por su humildad, elocuencia y sus maravillosas lecciones en liderazgo y transformación, negociación, manejo de crisis y aumento de la confianza. \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
         '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEs ex director de la Policía Nacional y exvicepresidente de Colombia, experto en inteligencia y contrainteligencia policial y pieza fundamental en la lucha contra el narcotráfico. En su conferencia, ahonda en el tráfico ilegal de drogas y las repercusiones de la pandemia y la recesión en este. \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FNaranjo-e1604695474573.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FNaranjo-e1604695474573.png",
         "Extractos conferencia | Óscar Naranjo",
-        "conferencias.html\u002F\u002Fwww.youtube.com\u002Fwatch?v=8jkmX-Qp0PU&list=PLa0Gw9ShzwwWweHSEfUHmqdLWPepNRqfo&index=1",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FCaptura-de-Pantalla-2020-11-27-a-las-16.34.40.png",
+        "https:\u002F\u002Fwww.youtube.com\u002Fwatch?v=8jkmX-Qp0PU&list=PLa0Gw9ShzwwWweHSEfUHmqdLWPepNRqfo&index=1",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FCaptura-de-Pantalla-2020-11-27-a-las-16.34.40.png",
         622,
         "Revisa otra de las grandes conferencias del Premio Nobel de Literatura: Mario Vargas Llosa. Reflexiona y debate con La Otra Mirada.",
         "mario-vargas-llosa-2-2",
         "Sobre las libertades en tiempos de pandemia habla el Premio Novel peruano. ",
         "Extractos conferencia | Mario Vargas Llosa",
-        "conferencias.html\u002F\u002Fwww.youtube.com\u002Fwatch?v=edzH_9zt5So&list=PLa0Gw9ShzwwWweHSEfUHmqdLWPepNRqfo&index=2",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FCaptura-de-Pantalla-2020-11-27-a-las-16.39.00.png",
+        "https:\u002F\u002Fwww.youtube.com\u002Fwatch?v=edzH_9zt5So&list=PLa0Gw9ShzwwWweHSEfUHmqdLWPepNRqfo&index=2",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FCaptura-de-Pantalla-2020-11-27-a-las-16.39.00.png",
         616,
         "Conferencias: Paul Polman | La Otra Mirada",
         "Revisa la conferencia de Paul Polman: Ex vicepresidente de P&G, habla sobre el rol empresarial post pandemia. Reflexiona y debate con La Otra Mirada.",
         "paul-polman",
         "19\u002F05\u002F2020 - 18:30",
         "El destacado empresario habla sobre el rol empresarial post pandemia.",
-        "conferencias.html\u002F\u002Fwww.youtube.com\u002Fwatch?v=EeKw2kfwFYA",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FPolman-1.png",
+        "https:\u002F\u002Fwww.youtube.com\u002Fwatch?v=EeKw2kfwFYA",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FPolman-1.png",
         '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EPaul Polman fue director ejecutivo (CEO) de la empresa de bienes de consumo británico-holandesa Unilever.por 10 años. Antes, fue presidente de Procter &amp; Gamble para Europa Occidental, director financiero en Nestlé y luego se convirtió en vicepresidente para las Américas en la misma empresa. En 2019, creó una nueva organización llamada Imagine para ayudar a las empresas a «erradicar la pobreza y la desigualdad y detener el cambio climático descontrolado».\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EComo CEO de Unilever demostró que, a largo plazo, un modelo de múltiples stakeholders, capturado en el Plan de vida sostenible de Unilever, va de la mano con un buen desempeño financiero. Durante su mandato, Unilever fue una de las empresas con mejor desempeño en su sector, con diez años de crecimiento constante de ingresos y ganancias.\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
         '\u003Cp\u003E\u003Cspan style="font-weight: 400;"\u003EEl rol empresarial post pandemia es el título de la conferencia del destacado empresario holandés, Paul Polman, ex CEO de Unilever, puesto que ocupó durante 10 años. Polman se ha convertido en el emblema medioambiental dentro del mundo corporativo y su ética ha sido reconocida por los más prestigiosos medios en el ámbito de los negocios. Habla sobre el futuro de las empresas y los cambios que debieran liderar. \u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n',
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FPolman-2-e1604695158307.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FPolman-2-e1604695158307.png",
         "Extractos conferencia | Paul Polman",
-        "conferencias.html\u002F\u002Fwww.youtube.com\u002Fwatch?v=7Ay7YWmm-GY&list=PLa0Gw9ShzwwWweHSEfUHmqdLWPepNRqfo&index=3",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FCaptura-de-Pantalla-2020-11-27-a-las-16.40.43.png",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FSorman-2-2-e1606403098549.png",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002Fhirsi-3-e1606403151788.png",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FTomasi-3-e1606403245905.png",
+        "https:\u002F\u002Fwww.youtube.com\u002Fwatch?v=7Ay7YWmm-GY&list=PLa0Gw9ShzwwWweHSEfUHmqdLWPepNRqfo&index=3",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FCaptura-de-Pantalla-2020-11-27-a-las-16.40.43.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FSorman-2-2-e1606403098549.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002Fhirsi-3-e1606403151788.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FTomasi-3-e1606403245905.png",
         "CEP",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002Fcep.png",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMVLL-3-e1606402898451.png",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FVargas-Llosa-1-2.jpg",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FVargas-Llosa-2-2.jpg",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FVargas-Llosa-3-2.jpg",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FVargas-Llosa-4-2.jpg",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FVargas-Llosa-5-2.jpg",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FVargas-Llosa-6-2.jpg",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FVargas-Llosa-7-2.jpg",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FVargas-Llosa-8-2.jpg",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FVargas-Llosa-9-2.jpg",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FVargas-Llosa-10-2.jpg",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002F1.png",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002F1-1.png",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002Fudd.png",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002F3.2.png",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002F3.2-1.png",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMcCloskey-3-e1606403558220.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002Fcep.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMVLL-3-e1606402898451.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FVargas-Llosa-1-2.jpg",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FVargas-Llosa-2-2.jpg",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FVargas-Llosa-3-2.jpg",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FVargas-Llosa-4-2.jpg",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FVargas-Llosa-5-2.jpg",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FVargas-Llosa-6-2.jpg",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FVargas-Llosa-7-2.jpg",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FVargas-Llosa-8-2.jpg",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FVargas-Llosa-9-2.jpg",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FVargas-Llosa-10-2.jpg",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002F1.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002F1-1.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002Fudd.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002F3.2.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002F3.2-1.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FMcCloskey-3-e1606403558220.png",
         "10\u002F12\u002F2015 - 08:30",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002F4.png",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002F4-1.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002F4.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002F4-1.png",
         "Thu Dec 10 2015 08:30:00 GMT+0000 (Coordinated Universal Time)",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002F5.2.png",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002F5.2-1.png",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FSanchéz-2-2-e1606403614788.png",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002F2.2.png",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002F2.2-1.png",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F10\u002FFerguson-2.png",
-        "conferencias.html\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FFerguson-2-e1606403654962.png"
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002F5.2.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002F5.2-1.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FSanchéz-2-2-e1606403614788.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002F2.2.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002F2.2-1.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F10\u002FFerguson-2.png",
+        "https:\u002F\u002Fapi.laotramirada.com\u002Fcontent\u002Fuploads\u002F2020\u002F11\u002FFerguson-2-e1606403654962.png"
       );
     </script>
-    <script src="_nuxt/runtime.48aa125.js" defer></script>
-    <script src="_nuxt/pages/conferencias/index.a5f5b8b.js" defer></script>
-    <script src="_nuxt/commons/01fa4752.954bafb.js" defer></script>
-    <script src="_nuxt/commons/9100d56e.f012c92.js" defer></script>
-    <script src="_nuxt/vendors/commons.21a32d2.js" defer></script>
-    <script src="_nuxt/app.8958c2a.js" defer></script>
+    <script src="/_nuxt/runtime.48aa125.js" defer=""></script>
+    <script src="/_nuxt/pages/conferencias/index.a5f5b8b.js" defer=""></script>
+    <script src="/_nuxt/commons/01fa4752.954bafb.js" defer=""></script>
+    <script src="/_nuxt/commons/9100d56e.f012c92.js" defer=""></script>
+    <script src="/_nuxt/vendors/commons.21a32d2.js" defer=""></script>
+    <script src="/_nuxt/app.8958c2a.js" defer=""></script>
+
+    <div
+      style="
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+        top: -10000px;
+        left: 0px;
+        right: 0px;
+        transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s;
+        opacity: 0;
+      "
+    >
+      <div
+        style="
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          top: 0px;
+          left: 0px;
+          z-index: 2000000000;
+          background-color: rgb(255, 255, 255);
+          opacity: 0.5;
+        "
+      ></div>
+      <div
+        style="
+          margin: 0px auto;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          position: absolute;
+          border: 1px solid rgb(204, 204, 204);
+          z-index: 2000000000;
+          background-color: rgb(255, 255, 255);
+          overflow: hidden;
+        "
+      >
+        <iframe
+          title="El reCAPTCHA caduca dentro de dos minutos"
+          src="https://www.google.com/recaptcha/api2/bframe?hl=es&amp;v=2uoiJ4hP3NUoP9v_eBNfU6CR&amp;k=6LcPzu8ZAAAAACb1ZDwXgwCZJo1cHQufTlDLLxBI"
+          name="c-olbbpi6ck8wv"
+          frameborder="0"
+          scrolling="no"
+          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+          style="width: 100%; height: 100%"
+        ></iframe>
+      </div>
+    </div>
   </body>
 
   <!-- Mirrored from laotramirada.com/conferencias by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 28 Mar 2022 20:28:01 GMT -->
