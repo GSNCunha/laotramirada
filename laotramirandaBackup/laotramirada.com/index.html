@@ -31049,6 +31049,26 @@
         position: relative;
         margin-top: 30px;
       }
+      .swiper-pagination-clickable .swiper-pagination-bullet {
+        cursor: pointer;
+      }
+      .swiper-container-horizontal > .swiper-pagination-bullets,
+      .swiper-pagination-custom,
+      .swiper-pagination-fraction {
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+      }
+      .card__image,
+      .card__image--no-filter {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        filter: grayscale(1);
+        transition: filter 0.2s;
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
       .reusable-carousel .swiper-pagination .swiper-pagination-bullet {
         background: transparent;
         border: 1px solid #fff;
@@ -31056,6 +31076,14 @@
         height: 14px;
         margin: 0 10px;
         opacity: 1;
+      }
+      .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        display: inline-block;
+        border-radius: 100%;
+        background: #000;
+        opacity: 0.2;
       }
       .reusable-carousel .swiper-pagination .swiper-pagination-bullet-active {
         background: #00ff9a;
@@ -31555,8 +31583,9 @@
                           class="conference-card card cleared"
                           ><div class="relative">
                             <img
-                              src="../api.laotramirada.com/content/uploads/2020/11/Moises-Nai%cc%81m-1.png"
+                              src="../api.laotramirada.com/content/uploads/2020/11/Moises-Naim-1.png"
                               alt=""
+                              class="cc-image card__image--no-filter"
                             />
                           </div>
                           <div class="card__content">
@@ -31716,16 +31745,24 @@
                       <!---->
                       <!---->
                       <div>
-                        <div>
-                          <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+                        <div
+                          class="swiper-container swiper-container-initialized swiper-container-horizontal"
+                        >
+                          <div
+                            class="swiper-wrapper"
+                            style="
+                              transition: all 0ms ease 0s;
+                              transform: translate3d(0px, 0px, 0px);
+                            "
+                          >
+                            <div class="col-md-6 col-lg-6 col-xl-4">
                               <div class="conference-card-container">
                                 <a
-                                  href="conferencias/ivan-duque/index.html"
+                                  href="/conferencias/ivan-duque/"
                                   class="conference-card card cleared"
                                   ><div class="relative">
                                     <img
-                                      src="../api.laotramirada.com/content/uploads/2020/10/Duque-Marquez-1-e1606403786380.png"
+                                      src="https://api.laotramirada.com/content/uploads/2020/10/Duque-Marquez-1-e1606403786380.png"
                                       alt=""
                                       class="cc-image card__image--no-filter"
                                     />
@@ -31750,7 +31787,7 @@
                                 ></a>
                               </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="col-md-6 col-lg-6 col-xl-4">
                               <div class="conference-card-container">
                                 <a
                                   href="conferencias/moises-naim/index.html"
@@ -31784,14 +31821,14 @@
                                 ></a>
                               </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="col-md-6 col-lg-6 col-xl-4">
                               <div class="conference-card-container">
                                 <a
-                                  href="conferencias/sergio-moro/index.html"
+                                  href="/conferencias/sergio-moro/"
                                   class="conference-card card cleared"
                                   ><div class="relative">
                                     <img
-                                      src="../api.laotramirada.com/content/uploads/2020/11/Moro-1-e1606403731134.png"
+                                      src="https://api.laotramirada.com/content/uploads/2020/11/Moises-Naím-1.png"
                                       alt=""
                                       class="cc-image card__image--no-filter"
                                     />
@@ -31816,14 +31853,14 @@
                                 ></a>
                               </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="col-md-6 col-lg-6 col-xl-4">
                               <div class="conference-card-container">
                                 <a
-                                  href="conferencias/mauricio-macri/index.html"
+                                  href="/conferencias/mauricio-macri/"
                                   class="conference-card card cleared"
                                   ><div class="relative">
                                     <img
-                                      src="../api.laotramirada.com/content/uploads/2020/11/Macri-2-1-e1606403690932.png"
+                                      src="https://api.laotramirada.com/content/uploads/2020/11/Macri-2-1-e1606403690932.png"
                                       alt=""
                                       class="cc-image card__image--no-filter"
                                     />
@@ -31848,14 +31885,14 @@
                                 ></a>
                               </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="col-md-6 col-lg-6 col-xl-4">
                               <div class="conference-card-container">
                                 <a
-                                  href="conferencias/oscar-naranjo/index.html"
+                                  href="/conferencias/oscar-naranjo/"
                                   class="conference-card card cleared"
                                   ><div class="relative">
                                     <img
-                                      src="../api.laotramirada.com/content/uploads/2020/11/Naranjo-2-2-e1606402956161.png"
+                                      src="https://api.laotramirada.com/content/uploads/2020/11/Naranjo-2-2-e1606402956161.png"
                                       alt=""
                                       class="cc-image card__image--no-filter"
                                     />
@@ -31880,14 +31917,14 @@
                                 ></a>
                               </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="col-md-6 col-lg-6 col-xl-4">
                               <div class="conference-card-container">
                                 <a
-                                  href="conferencias/mario-vargas-llosa-2-2/index.html"
+                                  href="/conferencias/mario-vargas-llosa-2-2/"
                                   class="conference-card card cleared"
                                   ><div class="relative">
                                     <img
-                                      src="../api.laotramirada.com/content/uploads/2020/11/MVLL_A2-1-e1606402876713.png"
+                                      src="https://api.laotramirada.com/content/uploads/2020/11/MVLL_A2-1-e1606402876713.png"
                                       alt=""
                                       class="cc-image card__image--no-filter"
                                     />
@@ -31913,7 +31950,18 @@
                               </div>
                             </div>
                           </div>
-                          <div class="swiper-pagination"></div>
+                          <div
+                            class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"
+                          >
+                            <span
+                              class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                            ></span
+                            ><span class="swiper-pagination-bullet"></span
+                            ><span class="swiper-pagination-bullet"></span
+                            ><span class="swiper-pagination-bullet"></span
+                            ><span class="swiper-pagination-bullet"></span
+                            ><span class="swiper-pagination-bullet"></span>
+                          </div>
                         </div>
                       </div>
                     </div>

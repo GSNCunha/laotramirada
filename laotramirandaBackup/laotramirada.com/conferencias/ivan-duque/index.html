@@ -15049,7 +15049,6 @@
       body,
       html {
         overflow-x: hidden;
-        overflow-y: hidden;
         background: radial-gradient(
           50% 50% at 50%,
           at 50%,
@@ -31377,7 +31376,7 @@
                           <div class="d-flex">
                             <li class="pc-header__nav-link text--plain">
                               <a
-                                href="#"
+                                href="index.html"
                                 aria-current="page"
                                 class="unstyled-link d-block nuxt-link-exact-active nuxt-link-active"
                                 >La otra mirada de Iván Duque
@@ -31430,11 +31429,13 @@
                             <p class="pc-header__date text--date white-text">
                               06/10/2020 - 18:30
                             </p>
+                            <!--here-->
                             <button
+                              onclick="window.location.href='../../login.html'"
                               class="pc-header__button button button--secondary"
                               style="margin-left: 0 !important"
-                            >
-                              Valora tu experiencia
+                            ><a href="../../login.html" alt='Broken Link'>
+                              Valora tu experiencia</a></button>
                             </button>
                             <button
                               id="play-button"
@@ -31733,6 +31734,200 @@
     <script src="../../_nuxt/commons/01fa4752.954bafb.js" defer></script>
     <script src="../../_nuxt/vendors/commons.21a32d2.js" defer></script>
     <script src="../../_nuxt/app.8958c2a.js" defer></script>
+
+    <div class="container">
+      <div class="footer">
+        <div>
+          <div class="newsletter-container mb-3">
+            <div class="newsletter row no-gutters">
+              <div class="col-md-7">
+                <h2 class="newsletter__title title--footer">
+                  Suscríbete a nuestro newsletter
+                </h2>
+                <p class="newsletter__info text--list-item">
+                  Recibe las últimas novedades en tu correo
+                </p>
+                <span
+                  ><form>
+                    <span
+                      ><div class="full-form-control mb-2">
+                        <div class="full-form-control__icon">
+                          <span class="mdi mdi-email-outline ifs-24"></span>
+                        </div>
+                        <div class="full-form-control__input">
+                          <input
+                            type="email"
+                            placeholder="Correo (ej: tucorreo@gmail.com)"
+                          />
+                        </div>
+                        <div class="full-form-control__button">
+                          <button type="submit" disabled="disabled">
+                            <span class="mdi mdi-send ifs-24"></span>
+                          </button>
+                        </div>
+                      </div>
+                      <!----></span
+                    >
+                  </form>
+                  <div
+                    data-sitekey="6LcPzu8ZAAAAACb1ZDwXgwCZJo1cHQufTlDLLxBI"
+                    data-size="invisible"
+                    data-theme="light"
+                    data-badge="bottomright"
+                    data-tabindex="0"
+                    data-callback="recaptchaSuccessCallback"
+                    data-expired-callback="recaptchaExpiredCallback"
+                    data-error-callback="recaptchaErrorCallback"
+                    class="g-recaptcha"
+                  >
+                    <div
+                      class="grecaptcha-badge"
+                      data-style="bottomright"
+                      style="
+                        width: 256px;
+                        height: 60px;
+                        display: block;
+                        transition: right 0.3s ease 0s;
+                        position: fixed;
+                        bottom: 14px;
+                        right: -186px;
+                        box-shadow: gray 0px 0px 5px;
+                        border-radius: 2px;
+                        overflow: hidden;
+                      "
+                    >
+                      <div class="grecaptcha-logo">
+                        <iframe
+                          title="reCAPTCHA"
+                          src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcPzu8ZAAAAACb1ZDwXgwCZJo1cHQufTlDLLxBI&amp;co=aHR0cHM6Ly9sYW90cmFtaXJhZGEuY29tOjQ0Mw..&amp;hl=es&amp;v=gZWLhEUEJFxEhoT5hpjn2xHK&amp;theme=light&amp;size=invisible&amp;badge=bottomright&amp;cb=doc0e2l7c5i2"
+                          width="256"
+                          height="60"
+                          role="presentation"
+                          name="a-p2a3g7e9a5y7"
+                          frameborder="0"
+                          scrolling="no"
+                          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+                        ></iframe>
+                      </div>
+                      <div class="grecaptcha-error"></div>
+                      <textarea
+                        id="g-recaptcha-response"
+                        name="g-recaptcha-response"
+                        class="g-recaptcha-response"
+                        style="
+                          width: 250px;
+                          height: 40px;
+                          border: 1px solid rgb(193, 193, 193);
+                          margin: 10px 25px;
+                          padding: 0px;
+                          resize: none;
+                          display: none;
+                        "
+                      ></textarea>
+                    </div>
+                    <iframe style="display: none"></iframe></div
+                ></span>
+              </div>
+              <div class="col-md-5 mt-4 mt-md-0">
+                <div class="newsletter__latest">
+                  <h2 class="title--footer uppercase mb-1">
+                    Últimos expositores
+                  </h2>
+                  <div class="row no-gutters">
+                    <div class="col-6 text--list-item op-7">
+                      <span class="mdi mdi-chevron-right ifs-16"></span>
+                      <a
+                        href="/conferencias/moises-naim"
+                        class="newsletter__link unstyled-link"
+                        >Moises Naim</a
+                      >
+                    </div>
+                    <div class="col-6 text--list-item op-7">
+                      <span class="mdi mdi-chevron-right ifs-16"></span>
+                      <a
+                        href="/conferencias/ivan-duque"
+                        class="newsletter__link unstyled-link nuxt-link-exact-active nuxt-link-active"
+                        aria-current="page"
+                        >Ivan Duque</a
+                      >
+                    </div>
+                    <div class="col-6 text--list-item op-7">
+                      <span class="mdi mdi-chevron-right ifs-16"></span>
+                      <a
+                        href="/conferencias/sergio-moro"
+                        class="newsletter__link unstyled-link"
+                        >Sergio Moro</a
+                      >
+                    </div>
+                    <div class="col-6 text--list-item op-7">
+                      <span class="mdi mdi-chevron-right ifs-16"></span>
+                      <a
+                        href="/vitrina/lideres/mauricio-macri"
+                        class="newsletter__link unstyled-link"
+                        >Mauricio Macri</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="socials-container mb-3">
+            <div class="socials row no-gutters">
+              <div class="col-12 col-md-auto d-flex align-items-center">
+                <div class="row no-gutters">
+                  <div class="col-12 col-md-auto">
+                    <label class="socials__message text--plain mb-0 mr-3"
+                      >Síguenos en RRSS</label
+                    >
+                  </div>
+                  <div class="col-12 col-md-auto">
+                    <ul class="socials__links">
+                      <li class="socials__link">
+                        <a
+                          href="https://www.facebook.com/laotramirada.cl/"
+                          target="_blank"
+                          class="unstyled-link"
+                          ><span
+                            class="mdi mdi-facebook ifs-24 socials__icon"
+                          ></span
+                        ></a>
+                      </li>
+                      <li class="socials__link">
+                        <a
+                          href="https://twitter.com/laotramirada_cl"
+                          target="_blank"
+                          class="unstyled-link"
+                          ><span
+                            class="mdi mdi-twitter ifs-24 socials__icon"
+                          ></span
+                        ></a>
+                      </li>
+                      <li class="socials__link">
+                        <a
+                          href="https://www.instagram.com/laotramirada_cl"
+                          target="_blank"
+                          class="unstyled-link"
+                          ><span
+                            class="mdi mdi-instagram ifs-24 socials__icon"
+                          ></span
+                        ></a>
+                      </li>
+                      <!---->
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-3 d-flex align-items-center">
+                <a href="/contacto" class="text--link unstyled-link"
+                  >Contáctanos</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 
   <!-- Mirrored from laotramirada.com/conferencias/ivan-duque/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 28 Mar 2022 20:27:13 GMT -->
